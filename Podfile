@@ -18,6 +18,7 @@ end
 target 'SalesforceMobileSDKFileLoggerStatic' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
+  pod 'SalesforceSDKCommon', :path => '/Users/rao.r/mobile-sdk/trooper2013/logger/SalesforceMobileSDK-iOS'
 
   # Pods for SalesforceMobileSDKFileLoggerStatic
 

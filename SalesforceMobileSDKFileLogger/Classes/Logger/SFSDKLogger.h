@@ -29,9 +29,10 @@
 
 #define DD_LEGACY_MACROS 0
 #import <CocoaLumberjack/DDLog.h>
+#import <SalesforceSDKCommon/SalesforceSDKCommon.h>
 #import "SFSDKFileLogger.h"
 
-@interface SFSDKLogger : NSObject
+@interface SFSDKLogger : NSObject<SFLogging>
 
 /**
  * Component name associated with this logger.
@@ -51,7 +52,7 @@
 /**
  * Used to get and set the current log level associated with this logger.
  */
-@property (nonatomic, readwrite, assign, getter=getLogLevel) DDLogLevel logLevel;
+@property (nonatomic, readwrite, assign) SFLogLevel logLevel;
 
 /**
  * Used to disable or enable file logging.
@@ -171,38 +172,6 @@
  */
 - (void)d:(nonnull Class)cls format:(nonnull NSString *)format, ...;
 
-/**
- * Logs a log line of the specified level.
- *
- * @param cls Class.
- * @param level Log level.
- * @param message Log message.
- */
-- (void)log:(nonnull Class)cls level:(DDLogLevel)level message:(nonnull NSString *)message;
-
-/**
- * Logs a log line of the specified level.
- *
- * @param cls Class.
- * @level Log level.
- * @param format The format message, and optional arguments to expand in the format.
- * @param ... The arguments to the message format string.
- */
-- (void)log:(nonnull Class)cls level:(DDLogLevel)level format:(nonnull NSString *)format, ...;
-
-/**
- * Returns current log level used by this logger.
- *
- * @return Current log level.
- */
-+ (DDLogLevel)logLevel;
-
-/**
- * Sets log level to be used by this logger.
- *
- * @param logLevel Log level.
- */
-+ (void)setLogLevel:(DDLogLevel)logLevel;
 
 /**
  * Logs an error log line.
