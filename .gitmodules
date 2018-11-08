@@ -1,3 +1,6 @@
 [submodule "external/CocoaLumberjack"]
 	path = external/CocoaLumberjack
 	url = https://github.com/forcedotcom/CocoaLumberjack
+[submodule "external/SalesforceMobileSDK-iOS"]
+	path = external/SalesforceMobileSDK-iOS
+	url = https://github.com/forcedotcom/SalesforceMobileSDK-iOS

@@ -17,9 +17,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B7E54C70219354A8009DC303"
-               BuildableName = "SalesforceMobileSDKFileLoggerTests.xctest"
-               BlueprintName = "SalesforceMobileSDKFileLoggerTests"
-               ReferencedContainer = "container:SalesforceMobileSDKFileLogger.xcodeproj">
+               BuildableName = "SalesforceFileLoggerTests.xctest"
+               BlueprintName = "SalesforceFileLoggerTests"
+               ReferencedContainer = "container:SalesforceFileLogger.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
