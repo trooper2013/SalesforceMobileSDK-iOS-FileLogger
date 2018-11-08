@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B17E48346B7E26FB718A253E /* libPods-SalesforceFileLoggerStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88206294BBCC9C8B8806F284 /* libPods-SalesforceFileLoggerStatic.a */; };
+		B70447A82193EBC70090E08C /* SFSDKLoggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E54D6821939295009DC303 /* SFSDKLoggerTests.m */; };
 		B7E54C72219354A8009DC303 /* SalesforceFileLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E54C68219354A8009DC303 /* SalesforceFileLogger.framework */; };
 		B7E54C79219354A8009DC303 /* SalesforceFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E54C6B219354A8009DC303 /* SalesforceFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7E54CDA21936260009DC303 /* SFSDKFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E54CD421936260009DC303 /* SFSDKFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,14 +28,53 @@
 		B7E54D7A219395C1009DC303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7E54D79219395C1009DC303 /* Assets.xcassets */; };
 		B7E54D7D219395C1009DC303 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E54D7B219395C1009DC303 /* LaunchScreen.storyboard */; };
 		B7E54D80219395C1009DC303 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E54D7F219395C1009DC303 /* main.m */; };
-		B7E54DA221939636009DC303 /* SFSDKLoggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E54D6821939295009DC303 /* SFSDKLoggerTests.m */; };
 		B7E54DA421939BBD009DC303 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E54DA321939BBD009DC303 /* XCTest.framework */; };
 		B7E54DA72193C01F009DC303 /* SalesforceFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E54C6B219354A8009DC303 /* SalesforceFileLogger.h */; };
-		BFBFCB717EB84F04F9BAF99F /* Pods_SalesforceFileLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F440564FA8143D0E559CD4CB /* Pods_SalesforceFileLogger.framework */; };
-		E9A68CB68186E002517881CC /* Pods_SalesforceFileLoggerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C53886B75AD5F3741139A0A /* Pods_SalesforceFileLoggerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B704479C2193EA410090E08C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B70447862193EA400090E08C /* SalesforceSDKCommon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B7136CFE216684A700F6A221;
+			remoteInfo = SalesforceSDKCommon;
+		};
+		B704479E2193EA410090E08C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B70447862193EA400090E08C /* SalesforceSDKCommon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B7136D07216684A700F6A221;
+			remoteInfo = SalesforceSDKCommonTests;
+		};
+		B70447A02193EA410090E08C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B70447862193EA400090E08C /* SalesforceSDKCommon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B716A3E4218F6EEA009D407F;
+			remoteInfo = SalesforceSDKCommonTestApp;
+		};
+		B70447A22193EA410090E08C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B70447862193EA400090E08C /* SalesforceSDKCommon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B7686AD921929D3B00D4332A;
+			remoteInfo = SalesforceSDKCommonStatic;
+		};
+		B70447A42193EA540090E08C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B70447862193EA400090E08C /* SalesforceSDKCommon.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B7136CFD216684A700F6A221;
+			remoteInfo = SalesforceSDKCommon;
+		};
+		B70447A62193EA600090E08C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B70447862193EA400090E08C /* SalesforceSDKCommon.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B7686AD821929D3B00D4332A;
+			remoteInfo = SalesforceSDKCommonStatic;
+		};
 		B7E54C73219354A8009DC303 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B7E54C5F219354A8009DC303 /* Project object */;
@@ -185,10 +224,9 @@
 
 /* Begin PBXFileReference section */
 		03FD1CCE3B2615271BEDC56C /* Pods-SalesforceFileLogger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesforceFileLogger.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalesforceFileLogger/Pods-SalesforceFileLogger.release.xcconfig"; sourceTree = "<group>"; };
-		0C53886B75AD5F3741139A0A /* Pods_SalesforceFileLoggerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalesforceFileLoggerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E03C35B7CB033B4055E986 /* Pods-SalesforceFileLoggerStatic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesforceFileLoggerStatic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesforceFileLoggerStatic/Pods-SalesforceFileLoggerStatic.debug.xcconfig"; sourceTree = "<group>"; };
 		414BEA528AA5CB3C10A757AD /* Pods-SalesforceFileLogger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesforceFileLogger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesforceFileLogger/Pods-SalesforceFileLogger.debug.xcconfig"; sourceTree = "<group>"; };
-		88206294BBCC9C8B8806F284 /* libPods-SalesforceFileLoggerStatic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SalesforceFileLoggerStatic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B70447862193EA400090E08C /* SalesforceSDKCommon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SalesforceSDKCommon.xcodeproj; path = "external/SalesforceMobileSDK-iOS/libs/SalesforceSDKCommon/SalesforceSDKCommon.xcodeproj"; sourceTree = "<group>"; };
 		B7E54C68219354A8009DC303 /* SalesforceFileLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SalesforceFileLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7E54C6B219354A8009DC303 /* SalesforceFileLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SalesforceFileLogger.h; sourceTree = "<group>"; };
 		B7E54C6C219354A8009DC303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -215,7 +253,6 @@
 		B7E54D7F219395C1009DC303 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B7E54DA321939BBD009DC303 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CB7634A59B7BC0D887A2FB35 /* Pods-SalesforceFileLoggerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesforceFileLoggerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesforceFileLoggerTests/Pods-SalesforceFileLoggerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F440564FA8143D0E559CD4CB /* Pods_SalesforceFileLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalesforceFileLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F0E3254EC657368CFF11F5 /* Pods-SalesforceFileLoggerStatic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesforceFileLoggerStatic.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalesforceFileLoggerStatic/Pods-SalesforceFileLoggerStatic.release.xcconfig"; sourceTree = "<group>"; };
 		FCC87C4DB43C988E9C421F0E /* Pods-SalesforceFileLoggerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesforceFileLoggerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalesforceFileLoggerTests/Pods-SalesforceFileLoggerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,7 +262,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFBFCB717EB84F04F9BAF99F /* Pods_SalesforceFileLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +271,6 @@
 			files = (
 				B7E54DA421939BBD009DC303 /* XCTest.framework in Frameworks */,
 				B7E54C72219354A8009DC303 /* SalesforceFileLogger.framework in Frameworks */,
-				E9A68CB68186E002517881CC /* Pods_SalesforceFileLoggerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +278,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B17E48346B7E26FB718A253E /* libPods-SalesforceFileLoggerStatic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,11 +296,20 @@
 			children = (
 				B7E54DA321939BBD009DC303 /* XCTest.framework */,
 				B7E54CEB21936B06009DC303 /* Lumberjack.xcodeproj */,
-				F440564FA8143D0E559CD4CB /* Pods_SalesforceFileLogger.framework */,
-				88206294BBCC9C8B8806F284 /* libPods-SalesforceFileLoggerStatic.a */,
-				0C53886B75AD5F3741139A0A /* Pods_SalesforceFileLoggerTests.framework */,
+				B70447862193EA400090E08C /* SalesforceSDKCommon.xcodeproj */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B70447872193EA400090E08C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B704479D2193EA410090E08C /* SalesforceSDKCommon.framework */,
+				B704479F2193EA410090E08C /* SalesforceSDKCommonTests.xctest */,
+				B70447A12193EA410090E08C /* SalesforceSDKCommonTestApp.app */,
+				B70447A32193EA410090E08C /* libSalesforceSDKCommon.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		B7E54C5E219354A8009DC303 = {
@@ -416,16 +459,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7E54C7C219354A8009DC303 /* Build configuration list for PBXNativeTarget "SalesforceFileLogger" */;
 			buildPhases = (
-				D7D578D78573AF9FEADF7E51 /* [CP] Check Pods Manifest.lock */,
 				B7E54C63219354A8009DC303 /* Headers */,
 				B7E54C64219354A8009DC303 /* Sources */,
 				B7E54C65219354A8009DC303 /* Frameworks */,
 				B7E54C66219354A8009DC303 /* Resources */,
-				83CBD11A607B6D2B786BC9FD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B70447A52193EA540090E08C /* PBXTargetDependency */,
 				B7E54D5221936B68009DC303 /* PBXTargetDependency */,
 			);
 			name = SalesforceFileLogger;
@@ -437,12 +479,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7E54C7F219354A8009DC303 /* Build configuration list for PBXNativeTarget "SalesforceFileLoggerTests" */;
 			buildPhases = (
-				06E732FC996C8ECFB94C601C /* [CP] Check Pods Manifest.lock */,
 				B7E54C6D219354A8009DC303 /* Sources */,
 				B7E54C6E219354A8009DC303 /* Frameworks */,
 				B7E54C6F219354A8009DC303 /* Resources */,
-				81A711D06A4EF4869415E8B8 /* [CP] Embed Pods Frameworks */,
-				07948DA7AA1C91B479B94C6A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -459,16 +498,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7E54C8C219354F3009DC303 /* Build configuration list for PBXNativeTarget "SalesforceFileLoggerStatic" */;
 			buildPhases = (
-				E6B60A22FC46F79010D7099A /* [CP] Check Pods Manifest.lock */,
 				B7E54CE621936297009DC303 /* Headers */,
 				B7E54C82219354F3009DC303 /* Sources */,
 				B7E54C83219354F3009DC303 /* Frameworks */,
 				B7E54C84219354F3009DC303 /* CopyFiles */,
-				E8CFA4A3F2636F3D3B22862C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B70447A72193EA600090E08C /* PBXTargetDependency */,
 			);
 			name = SalesforceFileLoggerStatic;
 			productName = SalesforceFileLoggerStatic;
@@ -532,6 +570,10 @@
 					ProductGroup = B7E54CEC21936B06009DC303 /* Products */;
 					ProjectRef = B7E54CEB21936B06009DC303 /* Lumberjack.xcodeproj */;
 				},
+				{
+					ProductGroup = B70447872193EA400090E08C /* Products */;
+					ProjectRef = B70447862193EA400090E08C /* SalesforceSDKCommon.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -544,6 +586,34 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		B704479D2193EA410090E08C /* SalesforceSDKCommon.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SalesforceSDKCommon.framework;
+			remoteRef = B704479C2193EA410090E08C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B704479F2193EA410090E08C /* SalesforceSDKCommonTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SalesforceSDKCommonTests.xctest;
+			remoteRef = B704479E2193EA410090E08C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B70447A12193EA410090E08C /* SalesforceSDKCommonTestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SalesforceSDKCommonTestApp.app;
+			remoteRef = B70447A02193EA410090E08C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B70447A32193EA410090E08C /* libSalesforceSDKCommon.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSalesforceSDKCommon.a;
+			remoteRef = B70447A22193EA410090E08C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		B7E54CFF21936B06009DC303 /* CocoaLumberjack.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -685,126 +755,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		06E732FC996C8ECFB94C601C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SalesforceFileLoggerTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		07948DA7AA1C91B479B94C6A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalesforceFileLoggerTests/Pods-SalesforceFileLoggerTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		81A711D06A4EF4869415E8B8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SalesforceFileLoggerTests/Pods-SalesforceFileLoggerTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SalesforceSDKCommon-framework/SalesforceSDKCommon.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SalesforceSDKCommon.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalesforceFileLoggerTests/Pods-SalesforceFileLoggerTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		83CBD11A607B6D2B786BC9FD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalesforceFileLogger/Pods-SalesforceFileLogger-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D7D578D78573AF9FEADF7E51 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SalesforceFileLogger-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E6B60A22FC46F79010D7099A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SalesforceFileLoggerStatic-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E8CFA4A3F2636F3D3B22862C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalesforceFileLoggerStatic/Pods-SalesforceFileLoggerStatic-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		B7E54C64219354A8009DC303 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -820,7 +770,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7E54DA221939636009DC303 /* SFSDKLoggerTests.m in Sources */,
+				B70447A82193EBC70090E08C /* SFSDKLoggerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -847,6 +797,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B70447A52193EA540090E08C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SalesforceSDKCommon;
+			targetProxy = B70447A42193EA540090E08C /* PBXContainerItemProxy */;
+		};
+		B70447A72193EA600090E08C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SalesforceSDKCommonStatic;
+			targetProxy = B70447A62193EA600090E08C /* PBXContainerItemProxy */;
+		};
 		B7E54C74219354A8009DC303 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B7E54C67219354A8009DC303 /* SalesforceFileLogger */;

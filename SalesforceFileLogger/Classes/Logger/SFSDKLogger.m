@@ -41,7 +41,6 @@ static NSMutableDictionary<NSString *, SFSDKLogger *> *loggerList = nil;
 
 @property (nonatomic, readwrite, strong) NSString *componentName;
 @property (nonatomic, readwrite, strong) DDLog *logger;
-@property (nonatomic, readwrite,assign) DDLogLevel ddLogLevel;
 @end
 
 @implementation SFSDKLogger
@@ -139,7 +138,7 @@ static NSMutableDictionary<NSString *, SFSDKLogger *> *loggerList = nil;
 }
 
 - (DDLogLevel)ddLogLevel {
-    return [self readLogLevel];
+     return [self readLogLevel];
 }
 
 - (void)setDdLogLevel:(DDLogLevel)logLevel {

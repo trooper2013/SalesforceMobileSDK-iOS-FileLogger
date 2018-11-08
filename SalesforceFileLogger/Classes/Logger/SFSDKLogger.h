@@ -50,9 +50,14 @@
 @property (nonatomic, readwrite, strong, nonnull) SFSDKFileLogger *fileLogger;
 
 /**
- * Used to get and set the current log level associated with this logger.
+ * Used to get and set the current log level associated with this logger using SFLogLevel abstraction.
  */
 @property (nonatomic, readwrite, assign) SFLogLevel logLevel;
+
+/**
+ * Used to get and set the current log level associated with this logger.
+ */
+@property (nonatomic, readwrite, assign) DDLogLevel ddLogLevel;
 
 /**
  * Used to disable or enable file logging.
@@ -276,7 +281,6 @@
  * @param message Log message.
  */
 + (void)log:(nonnull Class)cls level:(DDLogLevel)level message:(nonnull NSString *)message;
-
 @end
 
 #pragma mark - Log formatter for console logs
